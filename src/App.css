@@ -1,0 +1,332 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+    font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+    }
+
+    h1 {
+    font-size: 25px; /* atur sesuai kebutuhan, misalnya 28px */
+    }
+
+    nav {
+    position: fixed;
+    width: 100%;
+    justify-content: space-between; /* logo kiri, menu kanan */ /* kasih jarak kiri-kanan */
+    background: rgba(20, 20, 20, 0.9);
+    z-index: 1000;
+    }
+
+
+    .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    }
+
+    .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    }
+
+    .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    }
+
+    .nav-links a:hover {
+    color: #00aaff;
+
+    }
+
+    /* Tombol hamburger (default disembunyikan di desktop) */
+    .nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--text);
+    cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        position: absolute;
+        top: var(--nav-height);
+        right: 12px;
+        background: rgba(20,20,20,0.95);
+        padding: 15px;
+        border-radius: 8px;
+        min-width: 180px;
+    }
+
+    .nav-links.mobile-active {
+        display: flex;
+    }
+    }
+
+    .hero {
+    height: 100vh;
+    background: url('/your-image.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    }
+
+    .hero h1 {
+    font-size: 3.5rem;
+    }
+
+    .hero .highlight {
+    color: #00aaff;
+    }
+
+    .hero .btn-primary,
+    .hero .btn-secondary {
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 0 10px;
+    }
+
+    .btn-primary {
+    background: #00aaff;
+    color: #fff;
+    }
+
+    .btn-primary:hover {
+    background: #0088cc;
+    }
+
+    .btn-secondary {
+    background: #333;
+    color: #fff;
+    }
+
+    .btn-secondary:hover {
+    background: #444;
+    }
+
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    }
+
+    .social-icons a {
+    color: #fff;
+    transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+    color: #00aaff;
+    }
+
+    .about, .resume, .portfolio {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+    }
+
+    .resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    }
+
+    .skill {
+    margin-bottom: 20px;
+    }
+
+    .skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    }
+
+    .progress-bar {
+    background: #333;
+    border-radius: 5px;
+    height: 8px;
+    }
+
+    .progress {
+    background: #00aaff;
+    height: 8px;
+    border-radius: 5px;
+    }
+
+    .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    }
+
+    .portfolio-card {
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    }
+
+    .portfolio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    }
+
+    .works {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+    }
+
+    .works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    }
+
+    .resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    }
+
+    /* progress bar */
+    .skill {
+    margin-bottom: 20px;
+    }
+
+    .skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    }
+
+    .progress-bar {
+    background: #333;
+    border-radius: 5px;
+    height: 8px;
+    }
+
+    .progress {
+    background: #00aaff;
+    height: 8px;
+    border-radius: 5px;
+    }
+
+    /* portfolio grid */
+    .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    }
+
+    .portfolio-card {
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    }
+
+    .portfolio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    }
+
+    /* === HERO RESPONSIVE === */
+    @media (max-width: 1024px) {
+    .hero {
+        min-height: 80vh;       /* tetap tinggi tapi menyesuaikan */
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;      /* perkecil agar tidak overflow */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+    }
+
+    @media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero .btn-primary,
+    .hero .btn-secondary {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 12px;
+        font-size: 1.3rem;
+    }
+    }
+
+    @media (max-width: 480px) {
+    .hero {
+        min-height: 60vh;
+        padding: 20px 12px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        font-size: 1.1rem;
+        gap: 10px;
+    }
+    }
