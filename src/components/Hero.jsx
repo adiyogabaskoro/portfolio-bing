@@ -7,14 +7,9 @@
         <div className="overlay"></div>
         <div className="hero-content">
             <h1>Adiyoga<span className="highlight"> A Baskoro</span></h1>
-            <p>Siswa Jurusan SIJA SMK Negeri 7 Semarang</p>
-            <div className="social-icons">
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaPinterest /></a>
-            <a href="#"><FaGithub /></a>
-            <a href="#"><FaWhatsapp /></a>
-            </div>
+            <p>Fresh graduates of the Information Systems and Computer Networks Department 
+                (SIJA) </p>
+            <p>at State Vocational High School 7 Semarang</p>
         </div>
         </div>
     );
