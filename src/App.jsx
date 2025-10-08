@@ -43,8 +43,8 @@
 
     const projects = [
     { title: "FAFM Game Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/1.png", link: "https://fafm-game.vercel.app/" },
-    { title: "Weather Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/2.jpg", link: "https://web-cek-cuaca.vercel.app/" },
-    { title: "Company Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/3.jpg", link: "https://web-company-bootstrap.vercel.app/" },
+    { title: "Weather Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/8.png", link: "https://web-cek-cuaca.vercel.app/" },
+    { title: "Company Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/9.png", link: "https://web-company-bootstrap.vercel.app/" },
     ];
 
     export default App;

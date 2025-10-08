@@ -32,7 +32,7 @@
         },
         {
         title: "Paskibra organization activities",
-        img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/23.jpg",
+        img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/25.jpg",
         },
         {
         title: "Paskibra organization activities",
