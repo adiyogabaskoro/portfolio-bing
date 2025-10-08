@@ -246,26 +246,255 @@
     border-radius: 5px;
     }
 
-    /* portfolio grid */
+    /* Grid Layout */
     .portfolio-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
     }
 
+    /* Card Style */
     .portfolio-card {
-    background: #222;
-    border-radius: 8px;
+    background: #1c1c1c;
+    border-radius: 10px;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    z-index: 0;
+    will-change: transform;
     }
 
+    /* Efek hover: scale halus tanpa ganggu layout */
+    .portfolio-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.25);
+    z-index: 1;
+    }
+
+    /* Pastikan gambar tetap rapi */
     .portfolio-card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    display: block;
     }
 
+
+        /* === SKILLS & EXPERIENCE CARD CONTAINER === */
+    .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 60px auto 0 auto;
+    max-width: 1000px;
+    text-align: left;
+    }
+
+    .card-container {
+    background: #1c1c1c;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .card-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 170, 255, 0.25);
+    }
+
+    .card-container h3 {
+    color: #00aaff;
+    margin-bottom: 15px;
+    text-align: center;
+    }
+
+    .card-container ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    color: #ddd;
+    }
+
+    .skill {
+    margin-bottom: 18px;
+    }
+
+    .skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: #ddd;
+    }
+
+    .progress-bar {
+    background: #333;
+    border-radius: 5px;
+    height: 8px;
+    }
+
+    .progress {
+    background: #00aaff;
+    height: 8px;
+    border-radius: 5px;
+    }
+
+    /* Jarak antara projects dan skill section */
+    .works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    }
+
+
+        /* === ACHIEVEMENTS SECTION === */
+    .achievements {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    .achievements h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    }
+
+    /* Grid centered layout */
+    .achievements .portfolio-grid {
+    display: grid;
+    justify-content: center; /* center grid items */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    }
+
+    /* Achievement card style */
+    .portfolio-card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.25);
+    }
+
+        /* === GALLERY SECTION === */
+    .gallery {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    .gallery h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    }
+
+    /* Grid layout */
+    .gallery .portfolio-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    }
+
+        /* Grid Layout */
+    .portfolio-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+
+    /* Card Style */
+    .portfolio-card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    z-index: 0;
+    will-change: transform;
+    }
+
+    /* Efek hover: scale halus tanpa ganggu layout */
+    .portfolio-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.25);
+    z-index: 1;
+    }
+
+    /* Pastikan gambar tetap rapi */
+    .portfolio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    }
+
+
+    /* Title under image */
+    .achievement-info {
+    padding: 10px;
+    text-align: center; /* ⬅️ biar rata tengah */
+    }
+
+    .achievement-info h3 {
+    color: #00aaff;
+    font-size: 1rem;
+    margin: 8px 0;
+    text-align: center; /* ⬅️ pastikan teks judul di tengah */
+    }
+
+    /* Image + text in card */
+    .portfolio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    }
+
+    .portfolio-card:hover img {
+    transform: scale(1.05);
+    }
+
+    .achievement-info {
+    padding: 15px;
+    }
+
+    .achievement-info h3 {
+    color: #00aaff;
+    margin-bottom: 10px;
+    }
+
+    .achievement-info p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 90%;
+    }
+
+
+    
     /* === CONTACT SECTION === */
     .contact {
     width: 100%;
@@ -374,6 +603,46 @@
     .social-icons a:hover {
     color: #0077b6;
     }
+        /* === FIX HORIZONTAL SCROLL TANPA MATIIN HOVER === */
+    html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    /* Pastikan layout utama tidak melebihi layar */
+    .app {
+    max-width: 100%;
+    overflow-x: clip; /* biar aman tapi hover tetap hidup */
+    }
+
+    /* Grid di tengah, gak bikin meluber */
+    .portfolio-grid,
+    .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    }
+
+    /* Card tetap punya ruang buat hover scale */
+    .portfolio-card {
+    position: relative;
+    z-index: 0; /* biar gak tumpang tindih */
+    transform-origin: center;
+    will-change: transform;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.25);
+    z-index: 2; /* biar hover di atas card lain */
+    }
+
 
     /* === RESPONSIVE === */
     @media (max-width: 1024px) {
@@ -411,4 +680,5 @@
     .contact-form {
         width: 100%;
     }
+    
     }

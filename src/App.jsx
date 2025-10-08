@@ -2,7 +2,9 @@
     import Navbar from "./components/Navbar";
     import Hero from "./components/Hero";
     import About from "./components/About";
-    import Works from "./components/Works";  // gabungan resume + portfolio
+    import Works from "./components/Works";
+    import Gallery from "./components/Gallery";
+    import Achievement from "./components/Achievement";
     import Contact from "./components/Contact";
     import "./App.css";
 
@@ -17,7 +19,13 @@
             <About />
         </section>
         <section id="works">
-        <Works skills={skills} projects={projects} />
+            <Works skills={skills} projects={projects} />
+        </section>
+        <section id="achievements">
+            <Achievement />
+        </section>
+        <section id="gallery">
+            <Gallery photos={projects} />
         </section>
         <section id="contact">
             <Contact />
@@ -27,22 +35,16 @@
     }
 
     const skills = [
-        { name: "VSCode", level: 50 },
-        { name: "Illustrator", level: 50 },
-        { name: "Canva", level: 70 },
-        { name: "Blender", level: 20 },
+    { name: "VSCode", level: 50 },
+    { name: "Illustrator", level: 50 },
+    { name: "Canva", level: 70 },
+    { name: "Blender", level: 20 },
     ];
+
     const projects = [
-        { title: "Group Web Project ", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/1.png" },
-        { title: "GAPAKSI V", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/2.jpg" },
-        { title: "PORSIMAPTAR", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/3.jpg" },
-        { title: "Sertifikat", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/4.png" },
-        { title: "Sertifikat", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/5.png" },
-        { title: "LOPTASIKU 8", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/6.jpg" },
+    { title: "FAFM Game Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/1.png", link: "https://fafm-game.vercel.app/" },
+    { title: "Weather Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/2.jpg", link: "https://web-cek-cuaca.vercel.app/" },
+    { title: "Company Web", img: "https://raw.githubusercontent.com/adiyogabaskoro/portfolio-bing/main/public/images/3.jpg", link: "https://web-company-bootstrap.vercel.app/" },
     ];
-
-
-
-
 
     export default App;
