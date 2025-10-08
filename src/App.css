@@ -314,6 +314,7 @@ nav::after {
   padding: 80px 20px;
   color: #333;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .contact h2 {
@@ -338,6 +339,13 @@ nav::after {
   width: 100%;
   max-width: 900px;
   padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* Tambahan baru */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .contact-form {
