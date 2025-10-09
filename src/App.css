@@ -332,20 +332,15 @@ nav::after {
 .contact-container {
   margin-top: 40px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
   max-width: 900px;
-  padding: 0 10px;
+  padding: 0 15px;
   box-sizing: border-box;
-}
-
-/* Tambahan baru */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 .contact-form {
@@ -353,11 +348,14 @@ html, body {
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   background: #fff;
-  padding: 25px;
+  padding: 30px 25px;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  align-self: center;
+  box-sizing: border-box;
 }
 
 .contact-form input,
@@ -370,6 +368,7 @@ html, body {
   outline: none;
   resize: none;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form button {
@@ -391,18 +390,19 @@ html, body {
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
   gap: 10px;
   color: #444;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .contact-info p {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin: 0;
   font-size: 0.95rem;
@@ -414,7 +414,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 12px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .contact .social-icons a {
@@ -428,29 +428,38 @@ html, body {
   color: #0077b6;
 }
 
+/* === RESPONSIVE === */
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     gap: 25px;
   }
 
-  .contact-info {
-    align-items: center;
-    text-align: center;
-    max-width: 100%;
-  }
-
   .contact-form {
-    width: 100%;
     max-width: 90%;
-    padding: 20px;
+    padding: 20px 15px;
   }
 
-  .contact .social-icons {
-    justify-content: center;
+  .contact-info {
+    max-width: 90%;
   }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Fix overflow page */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* === FADE IN === */
